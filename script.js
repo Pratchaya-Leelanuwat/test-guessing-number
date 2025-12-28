@@ -83,3 +83,10 @@ function resetGame() {
 
 // เริ่มเกมเมื ่อโหลดหน้า
 window.addEventListener("load", initializeGame);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const guessInput = document.getElementById("guessInput");
+  guessInput.addEventListener("focus", function () {
+    this.select();
+  });
+});
